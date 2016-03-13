@@ -13,17 +13,22 @@ html{
 	height: 100%;
 	width: 100%;
 	margin-: 30px;
+    min-height: 671px;
+    min-width: 682px;
+
+
 }
 
 body{
 	height: 100%;
 	color:white;
 	margin:auto;
-	background: url("fond-accueil.jpg") no-repeat center; 	
+	background: url("fond-accueil.jpg") no-repeat center;
+    background-size: cover; 
+
 }
 
 #top_accueil{
-	margin-top: 30px;
 	margin-left: 50px;
 	display: flex;
 	justify-content:space-between;
@@ -31,9 +36,16 @@ body{
 
 #logo_nom{
 	text-shadow:3px 3px 5px black;
-	font-size:x-large;
-	width: 310px;
+	font-size:large;
+	width: 380px;
 	font-family: 'Pacifico', Arial, sans-serif;
+}
+
+#logo_nom img{
+    float:left;
+    max-width: 20%;
+    height: auto;
+    margin-right: 30px;
 }
 
 #top_accueil .nav{
@@ -69,15 +81,20 @@ nav li a {
 nav li a span{
 	color:#ff8c2b;
 	text-shadow:1px 1px 2px black;
+    padding-right: 3px;
+    padding-left: 3px;
 }
 
 nav li a:hover {
     color: yellow;
+    text-shadow:3px 3px 3px black;
+    border:dashed 2px black; 
 } 
 
 nav li a span:hover{
 	color:yellow;
-	border:dashed 2px black; 
+	
+    text-shadow:3px 3px 3px black;
 }
 
 #logo_nom{
@@ -102,17 +119,15 @@ nav li a span:hover{
 	text-align:center;
 }
 
-/*
-footer p{
-  height: 30px;
-  width : 100%;
-  background-color : black;
-  color : white;
-  font-family : Dayrom, sans-serif;
-  font-size : 12px;
-  margin : 0;
+
+footer {
+position:absolute;
+bottom:0;
+margin-left: 20px;
+font-size:small;
+text-shadow:3px 3px 3px black;
 }
-*/
+
 
 
 
