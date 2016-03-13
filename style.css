@@ -1,0 +1,180 @@
+/* Définition des polices personnalisées */
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pacifico'), url('http://themes.googleusercontent.com/font?kit=fKnfV28XkldRW297cFLeqfesZW2xOQ-xsNqO47m55DA') format('truetype');
+}
+
+
+html{
+	font-family: 'Dayrom';
+	background-color:black;
+	height: 100%;
+	width: 100%;
+	margin-: 30px;
+}
+
+body{
+	height: 100%;
+	color:white;
+	margin:auto;
+	background: url("fond-accueil.jpg") no-repeat center; 	
+}
+
+#top_accueil{
+	margin-top: 30px;
+	margin-left: 50px;
+	display: flex;
+	justify-content:space-between;
+}
+
+#logo_nom{
+	text-shadow:3px 3px 5px black;
+	font-size:x-large;
+	width: 310px;
+	font-family: 'Pacifico', Arial, sans-serif;
+}
+
+#top_accueil .nav{
+	width : 100%;
+	height: 20%;
+	float : right;
+	display : flex;
+	justify-content: flex-end;	
+
+}
+
+nav ul{
+	font-size:x-large;
+	text-align: right;
+	margin: 4px 50px 5px;
+	font-family: 'Pacifico', Arial, sans-serif;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+nav li{
+	margin: 8px;
+	display:inline;
+	color:black;
+
+}
+
+nav li a {
+	color:inherit;
+	text-decoration: none;
+}
+
+nav li a span{
+	color:#ff8c2b;
+	text-shadow:1px 1px 2px black;
+}
+
+nav li a:hover {
+    color: yellow;
+} 
+
+nav li a span:hover{
+	color:yellow;
+	border:dashed 2px black; 
+}
+
+#logo_nom{
+		position: top-left;
+}
+
+.btn
+{
+	background-color: orange;
+	color: white;
+}
+
+#section{
+	width: 40%;
+	height:40%;
+	margin:auto;
+	margin-bottom: 10px;
+	margin-top: 50px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:center;
+}
+
+/*
+footer p{
+  height: 30px;
+  width : 100%;
+  background-color : black;
+  color : white;
+  font-family : Dayrom, sans-serif;
+  font-size : 12px;
+  margin : 0;
+}
+*/
+
+
+
+
+
+
+/* Lien source pour le boutton : http://www.sanwebe.com/2014/02/css3-buttons-examples-with-effects-animations */
+#button {
+    display: inline-block;
+    margin-top: 20%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow:    0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+    -moz-transition: -moz-box-shadow .1s ease-in-out;
+    -o-transition: -o-box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
+    font-size: 50px;
+    color: #fff;
+}
+
+#button span {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #ec528d;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+    background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+    background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+    background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    font-family: 'Pacifico', Arial, sans-serif;
+    line-height: 1;
+    text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
+    -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+    -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+    transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+#button:hover span {
+    background-color: #ec6a9c;
+    text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+}
+
+#button:active, #button:focus {
+    -webkit-box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+    box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+}
+
+#button:active span {
+    -webkit-transform: translate(0, 4px);
+    -moz-transform: translate(0, 4px);
+    -o-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+}
+
