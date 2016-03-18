@@ -4,7 +4,7 @@
 	<head> 
 		<meta charset = "utf-8" />
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="bootstrap/css/bootsrap.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<Title> Le bon CoinCoin</title>
 	</head>
 
@@ -41,9 +41,18 @@
 
 
 		<section class="section">
-			<a href="http://www.google.com" id="button"> <!-- changer google par la page --> 
-	    		<span>Trouver le coincoin de ses rêves !</span>
-			</a>
+			<form method="POST" action="" id="button"> 
+
+	    		<span>
+	    		<div class="form-group">
+    				<label for="research">Trouver le coincoin de ses rêves !</label>
+    				<input type="text" class="form-control" aria-hidden="true" id="research">
+    				<button type="button" class="btn btn-default btn-lg">Cherchez! </button>
+ 				 </div>
+	    		</span>
+	    		</div>
+			</form>
+
 		</section>
 
 		

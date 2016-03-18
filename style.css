@@ -211,3 +211,27 @@ footer {
     transform: translate(0, 4px);
 }
 
+/*Formulaire*/
+#research {
+    margin: 20px;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.research {
+    width: 90%;
+    height: 30%;
+    margin:auto;
+    margin-bottom: 10px;
+    /*display:flex;
+    flex-direction:column;
+    justify-content:center;*/
+    text-align:center;
+}
+
+.form-group {
+    position: relative;
+    bottom: 20px;
+    margin-left: 20px;
+}
