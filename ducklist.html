@@ -6,56 +6,49 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css" />
 		<Title> Le Bon CoinCoin  - Accueil </title>
-		<style>
-			 #position_actu{    
-				color: yellow;
-    			text-shadow:3px 3px 3px black; }
-    		 header #logo_nom img{
-				margin-top: 15px;
-				margin-left: 15px;}
-
-   		</style>
 	</head>
 
 	<body>
-
-		<div id ="top_accueil">
-
-			<header class="header">
-				<div id="logo_nom">	
-					<a href="accueil.html"><img src="images/logo.png" alt="logo" />
-					<h1>Le Bon CoinCoin</h1></a>	
-				</div>
-			</header>
-
-
-			<nav class="nav">
-	            <ul>
-	            	<li> 						
-						 <form class="navbar-form" role="search">
-						  <div class="form-group">
-						  <input type="text" class="form-control esearch" placeholder="Search">
-						  <button type="submit" class="btn btn-default">Cherchez un Canard !</button>
-						  </div>
-						</form>
-					</li>
-	            	<li>
-	                    <a href="accueil.html">Accueil</a>
-	                </li>
-	                <li>
-	                    <a href="ducklist.html"><span>Nos canards</span></a>
-	                </li>
-	                <li>
-	                    <a href="qui-somme-nous.html">L'équipe</a>
-	                </li>
-	                <li>
-	                    <a href="details.html">Détails techniques</a>
-	                </li>
-
-
-	            </ul>
-			</nav>	
-		</div>
+	<div id ="top_accueil">
+		<div class="content">
+			<div class="row">
+			  <div class="col-md-3"> 
+				<header class="header">
+					<div id="logo_nom">	
+						<a href="accueil.html"><img src="images/logo.png" alt="logo" />
+						<h1>Le Bon CoinCoin</h1></a>	
+					</div>
+				</header>
+		  	  </div>	<!-- fin col-md-3 -->
+		  	  <nav class="col-md-9">
+				<nav class="nav">
+		            <ul>
+		            	<li>
+		                    <a href="accueil.html">Accueil</a>
+		                </li>
+		                <li>
+		                    <a href="ducklist.html"><span>Nos canards</span></a>
+		                </li>
+		                <li>
+		                    <a href="qui-somme-nous.html">L'équipe</a>
+		                </li>
+		                <li>
+		                    <a href="details.html">Détails techniques</a>
+		                </li>
+						<li> 						
+							 <form class="navbar-form" role="search">
+							  <div class="form-group">
+							  <input type="text" class="form-control esearch" placeholder="Search">
+							  <button type="submit" class="btn btn-default">Cherchez !</button> 
+							  </div>
+							</form>
+						</li>
+		            </ul>
+				</nav>	<!-- fin nav -->
+			</div>  <!-- fin col-md-9 -->
+		</div> <!-- fin row -->
+	</div>	<!-- fin content -->
+</div>  <!-- fin top-accueil -->
 
 
 
@@ -64,66 +57,157 @@
 		<div class="row">
 		  <div class="col-md-3"> 
 			  <div class="thumbnail">
-				<div class="panel-default">
-				  <div class="panel-heading">CATEGORIES</div>
-					  <div class="panel-body">
-						  <form>
+				  <div class="panel-default">
+				    <div class="panel-heading">CATEGORIES</div>
+					    <div class="panel-body">
+						    <form>
 						  
-							  <label> Couleur
-								<select class="form-control">
-								  <option>Jaune</option>
-								  <option>Rouge</option>
-								  <option>Noir</option>
-								  <option>Vert</option>
-								  <option>Bleu</option>
-								  <option>Rose</option>
-								</select>
-							  </label><br/>
+  							  <label> Couleur
+    								<select class="form-control">
+    								  <option>Jaune</option>
+    								  <option>Rouge</option>
+    								  <option>Noir</option>
+    								  <option>Vert</option>
+    								  <option>Bleu</option>
+    								  <option>Rose</option>
+    								</select>
+  							  </label><br/>
 							  
-							  <label> Theme
-								<select class="form-control">
-								  <option>Classique</option>
-								  <option>International</option>
-								  <option>Fête</option>
-								  <option>Enfant</option>
-								  <option>Adulte</option>
-								</select>
-							  </label><br/>
+  							  <label> Theme
+    								<select class="form-control">
+    								  <option>Coin Coins Classique</option>
+    								  <option>International</option>
+    								  <option>Fête</option>
+                      <option>Métiers</option>
+                      <option>Personnages célèbres</option>
+                      <option>Coin Coins de collection</option>
+    								  <option>Enfant</option>
+    								  <option>Adulte</option>
+    								</select>
+  							  </label><br/>
 
-							  <label> Prix Minimum
-							  	<select class="form-control">
-								  <option> < 5 </option>
-								  <option>10</option>
-								  <option>15</option>
-								  <option>20</option>
-								  <option>25</option>
-								  <option>> 30</option>
-								</select>
-							  </label>   
+  							  <label> Prix Minimum
+  							  	<select class="form-control" name="prix_min">
+    								  <option> Moins de 5€ </option>
+    								  <option>10€</option>
+    								  <option>15€</option>
+    								  <option>20€</option>
+    								  <option>25€</option>
+    								  <option> Plus 30€</option>
+  							   	</select>
+  							  </label>   
 							    <label> Prix Maximum
-							    	<select class="form-control">
-							  	  <option> < 5 </option>
-							  	  <option>10</option>
-							  	  <option>15</option>
-							  	  <option>20</option>
-							  	  <option>25</option>
-							  	  <option>> 30</option>
-							  	</select>
-							    </label>
+							    	<select class="form-control" name="prix_max">
+                      <option> Moins de 5€ </option>
+                      <option>10€</option>
+                      <option>15€</option>
+                      <option>20€</option>
+                      <option>25€</option>
+                      <option> Plus 30€</option>
+                    </select>
+							    </label><br/>
+					   		  <input type="submit" class="btn btn-default btn-submit" value="Chercher ! "	/>
+						    </form>
+					    </div> <!-- fin panel-body -->
+			    </div> <!-- fin panel-default -->
+        </div> <!-- fin thumbnail -->
+      </div><!-- fin col-md-3 -->
 
-							  <input type="submit" class="btn btn-default btn-submit" value="Chercher ! "	/>
-						  </form>
-					 </div>
-					</div>
-			</div>
-    	</div>
-	</div>
-  </div>
-</div>
+			<div class="col-md-9">
+
+		    <div class="col-lg-4 col-sm-6">
+  				<div class="thumbnail">
+  					<a href="/images/ninja.jpg" class="post-image-link">
+  						<img src="images/ninja.jpg" class="img-rounded" alt="Canard Ninja" />
+  					</a>
+  					<div class="caption">
+  						<h3> Ninja </h3>
+              <h2> 5€ </h2>
+  						<p> Ce canard Ninja sait bien se cacher ! </p>
+              <a href="details.html" class="btn btn-default">Consulter</a>
+  					</div> <!-- fin caption -->
+  				</div><!-- fin thumbnail -->
+  		  </div> <!-- fin col-lg-4 col-sm-6 -->
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <a href="/template-overviews/agency" class="post-image-link">
+             <img src="images/dentiste.jpg" class="img-rounded" alt="Canard Dentiste" />
+            </a>
+            <div class="caption">
+              <h3> Le Dentiste </h3>
+              <h2> 5€ </h2>
+              <p> Ouvrez grand la bouche !</p>
+              <a href="details.html" class="btn btn-default">Consulter</a>
+            </div><!-- fin caption -->
+          </div> <!-- fin thumbnail -->
+       </div> <!-- fin col-lg-4 col-sm-6 -->
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <a href="/template-overviews/agency" class="post-image-link">
+             <img src="images/hotesse.jpg" class="img-rounded" alt="Canard Hotesse de l'Air" />
+            </a>
+            <div class="caption">
+              <h3> L'Hotesse de l'air </h3>
+              <h2> 5€ </h2>
+              <p> Coffee or Thea ? </p>
+              <a href="details.html" class="btn btn-default">Consulter</a>
+            </div><!-- fin caption -->
+          </div> <!-- fin thumbnail -->
+       </div> <!-- fin col-lg-4 col-sm-6 -->
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <a href="/template-overviews/agency" class="post-image-link">
+             <img src="images/lutin.jpg" class="img-rounded" alt="Canard Lutin" />
+            </a>
+            <div class="caption">
+              <h3> Lutin </h3>
+              <h2> 5€ </h2>
+              <p> Celui-ci est mieux dans votre bain que dans votre jardin !</p>
+              <a href="details.html" class="btn btn-default">Consulter</a>
+            </div><!-- fin caption -->
+          </div> <!-- fin thumbnail -->
+       </div> <!-- fin col-lg-4 col-sm-6 -->
+
+       <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <a href="/template-overviews/agency" class="post-image-link">
+             <img src="images/tv.jpg" class="img-rounded" alt="Canard tv" />
+            </a>
+            <div class="caption">
+              <h3> La Télé  </h3>
+              <h2> 5€ </h2>
+              <p> Trop de télé réalité rend Coin ! </p>
+              <a href="details.html" class="btn btn-default">Consulter</a>
+            </div><!-- fin caption -->
+          </div> <!-- fin thumbnail -->
+       </div> <!-- fin col-lg-4 col-sm-6 -->
+
+        <div class="col-lg-4 col-sm-6">
+          <div class="thumbnail">
+            <a href="/template-overviews/agency" class="post-image-link">
+             <img src="images/wedding.jpg" class="img-rounded" alt="Canard Mariage" />
+            </a>
+            <div class="caption">
+              <h3> Les Mariés </h3>
+              <h2> 15€ </h2>
+              <p> Petit couple de Coins, just married!</p>
+              <a href="details.html" class="btn btn-default">Consulter</a>
+            </div><!-- fin caption -->
+          </div> <!-- fin thumbnail -->
+       </div> <!-- fin col-lg-4 col-sm-6 -->
+
+
+
+			</div> <!-- fin col-md-9 -->
+    </div> <!-- fin row -->
+</div>  <!-- fin content -->
 		  
-		<footer class="footer">
+<!-- 		<footer class="footer">
 			<p>Marion CRAIPEAU & Kévin COISSARD   ©AucunsDroitsReservés</p>
-		</footer>
+		</footer> -->
 		
 
 	</body>
