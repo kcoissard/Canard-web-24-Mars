@@ -58,6 +58,8 @@ header #logo_nom img{
 	float : right;
 	display : flex;
 	justify-content: flex-end;	
+    position:relative;
+    top: 20px;
 }
 
 
@@ -235,3 +237,14 @@ footer {
     bottom: 20px;
     margin-left: 20px;
 }
+
+h1 {
+    color:white;
+    position: relative;
+    top:10px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
