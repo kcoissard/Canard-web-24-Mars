@@ -3,60 +3,55 @@
 
 	<head> 
 		<meta charset = "utf-8" />
-		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<Title> Le bon CoinCoin  - Détails techniques </title>
-		<style>
-			 #position_actu{    
-				color: yellow;
-    			text-shadow:3px 3px 3px black;} 
-    		 header #logo_nom img{
-				margin-top: 15px;
-				margin-left: 15px;}
-			 nav ul{padding-top: 20px;}
-   		</style>
+		<link rel="stylesheet" href="style.css" />
+		<Title> Le Bon CoinCoin  - Accueil </title>
 	</head>
 
-	
 	<body>
-			<header class="header">
-				<div id="logo_nom">	
-					<a><img src="images/logo.png" alt="logo" /></a>	
-				</div>
-			</header>
+	<div id ="top_accueil">
+		<div class="content">
+			<div class="row">
+			  <div class="col-md-3"> 
+				<header class="header">
+					<div id="logo_nom">	
+						<a href="accueil.html"><img src="images/logo.png" alt="logo" />
+						<h1>Le Bon CoinCoin</h1></a>	
+					</div>
+				</header>
+		  	  </div>	<!-- fin col-md-3 -->
+		  	  <nav class="col-md-9">
+				<nav class="nav">
+		            <ul>
+		            	<li>
+		                    <a href="accueil.html">Accueil</a>
+		                </li>
+		                <li>
+		                    <a href="ducklist.html"><span>Nos canards</span></a>
+		                </li>
+		                <li>
+		                    <a href="qui-somme-nous.html">L'équipe</a>
+		                </li>
+		                <li>
+		                    <a href="details.html">Détails techniques</a>
+		                </li>
+						<li> 						
+							 <form class="navbar-form" role="search">
+							  <div class="form-group">
+							  <input type="text" class="form-control esearch" placeholder="Search">
+							  <button type="submit" class="btn btn-default">Cherchez !</button> 
+							  </div>
+							</form>
+						</li>
+		            </ul>
+				</nav>	<!-- fin nav -->
+			</div>  <!-- fin col-md-9 -->
+		</div> <!-- fin row -->
+	</div>	<!-- fin content -->
+</div>  <!-- fin top-accueil -->
 
-			<nav class="nav">
-	            <ul>
-	            	<li>
-	                    <a href="accueil.html"> Accueil </a>
-	                </li>
 
-	                <li>
-	                    <a href="ducklist.html" ><span>Nos canards</span></a>
-	                </li>
-	                <li>
-	                    <a href="qui-somme-nous.html">Notre équipe</a>
-	                </li>
-	                <li>
-	                    <a href="#" id="position_actu">Détails techniques</a>
-	                </li>
-	                <li> <div id ="zone_recherche"> 
-							<div id="barre-recherche">
-					   			<input type="text" class="form-control" placeholder="   Je cherche ...">
-							</div>
-						
-							<div id="boutton-recherche">
-								<button type="button" class="btn btn-default btn-sm">Rechercher</button>
-							</div> 
-						</div>
-					</li>
-	            </ul>
-			</nav>
-		</div>
 
-		<section class="section">
-
-		</section>
 
 		
 		<footer class="footer">
