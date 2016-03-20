@@ -62,7 +62,7 @@ header #logo_nom img{
 }
 
 
-nav ul{
+#top_accueil nav ul{
     font-size:x-large;
 	text-align: left;
 	margin: 4px 50px 5px;
@@ -73,14 +73,14 @@ nav ul{
 }
 
 
-nav li{
+#top_accueil nav li{
 	margin: 3px;
 	display:inline;
 	color:black;
 }
 
 
-nav li a {
+#top_accueil nav li a {
     padding: 10px;
 	color:inherit;
 	text-decoration: none;
@@ -88,7 +88,7 @@ nav li a {
 }
 
 
-nav li a span{
+#top_accueil nav li a span{
 	color:#ff8c2b;
 	text-shadow:1px 1px 2px black;
     padding-right: 3px;
@@ -96,14 +96,14 @@ nav li a span{
 }
 
 
-nav li a:hover {
+#top_accueil nav li a:hover {
     color: yellow;
     text-shadow:3px 3px 3px black;
     border:dashed 3px black; 
 } 
 
 
-nav li a span:hover{
+#top_accueil nav li a span:hover{
 	color:yellow;
 	
     text-shadow:3px 3px 3px black;
@@ -129,8 +129,6 @@ section{
 
 footer {
     font-family: Verdana, sans-serif;
-    position:absolute;
-    bottom:0;
     margin-left: 20px;
     font-size:small;
     text-shadow:3px 3px 3px black;
@@ -246,9 +244,14 @@ label {
 }
 
 .thumbnail {
-    margin: 20px;
+    position: relative;
+    left: 15px;
     background-color: rgb(128,154,189); 
-    /*background-color: rgb(246,199,0); /* jaune poussin*/*/
+    /*background-color: rgb(246,199,0); /* jaune poussin*/
+}
+
+.thumbnail p {
+    font-size: 1.3em;
 }
 
 .form-control {
@@ -269,10 +272,12 @@ option {
 
 
 .panel-heading {
-    margin:5px;
+    margin:-5px;
     font-weight: bold;
     text-align:center;
     font-size: 1.2em;
+    text-transform: uppercase;
+
 }
 
 /*La feuille de style que tu avais intégré dans le header */
@@ -294,14 +299,80 @@ header #logo_nom img{
     font-weight: bold;
 }
 
-.caption h3 {
-    font-size: 2em;
-        font-family: 'Pacifico', Arial, sans-serif;
-}
-
-
 .caption h2{
     margin-left: 25px;
     color: yellow;
     text-shadow: 2px 2px 4px #000000;
 }
+
+.img-rounded {
+    border: white solid 2px;
+    margin: 20px 20px -10px 20px;
+}
+
+
+.glyphicon-shopping-cart {
+    margin: 10px;
+}
+
+.ajouter-panier{
+    text-align: right;
+    pos
+}
+
+
+td {
+
+    padding: 5px;
+}
+
+.col-md-6{
+     border: red 2px solid;
+}
+
+.pagination {
+    font-size: 1.5em;
+    font-family: 'Pacifico', Arial, sans-serif;
+    margin: 15px;
+}
+
+.btn-panier {
+    position: relative;
+    right: 10px;
+}
+
+.promo {
+    background-color: rgb(244,195,0);
+    margin: auto;
+    margin-top: 20px;
+}
+
+.promo p {
+    font-size: 1em;
+}
+
+.promo h2 {
+    color: green;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+del {
+    font-size: 1.4em;
+    color: red;
+    opacity: 0.5;
+}
+
+.promo h2, del {
+    display: inline-block;
+}
+
+.suggestions .img-rounded {
+    width: 75%;
+    color: red;
+}
+
+.suggestions .panel-heading {
+    margin-bottom: 20px;
+}
+
