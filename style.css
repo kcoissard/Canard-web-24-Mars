@@ -8,7 +8,7 @@
 
 html{
 	font-family: 'Dayrom';
-	background-color:black;
+	/*background-color:black;*/
 	height: 100%;
 	width: 100%;
     min-height: 671px;
@@ -75,27 +75,33 @@ header #logo_nom img{
 
 
 #top_accueil nav li{
-	margin: 3px;
+	margin: 8px;
 	display:inline;
-	color:black;
+	color:white;
+    text-shadow:1px 1px 2px black;
 }
+
+
 
 
 #top_accueil nav li a {
     padding: 10px;
 	color:inherit;
 	text-decoration: none;
-                    font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 
-#top_accueil nav li a span{
+#top_accueil nav li a #canards{
 	color:#ff8c2b;
 	text-shadow:1px 1px 2px black;
     padding-right: 3px;
     padding-left: 3px;
 }
 
+#top_accueil nav li #ICI{
+    color:yellow;
+}
 
 #top_accueil nav li a:hover {
     color: yellow;
@@ -111,7 +117,8 @@ header #logo_nom img{
 }
 
 
-#logo_nom{
+#logo_nom a h1{
+    font-size: 200%;
 }
 
 
@@ -133,6 +140,8 @@ footer {
     margin-left: 20px;
     font-size:small;
     text-shadow:3px 3px 3px black;
+    position:absolute;
+    margin-bottom:10px;
 }
 
 
@@ -282,15 +291,7 @@ option {
 
 /*La feuille de style que tu avais intégré dans le header */
 
-#position_actu{    
-    color: yellow;
-    text-shadow:3px 3px 3px black;
-} 
-             
-header #logo_nom img{
-    margin-top: 15px;
-    margin-left: 15px;
-}
+
 
 /* -----------  NOS CANARDS -----------*/
 
@@ -419,4 +420,36 @@ del {
     margin: 30px;
     font-size: 1.5em;
     color: red;
+}
+
+.details {
+    margin: 20px;
+    text-align: center;
+}
+
+.details .thumbnail {
+  background-color: rgba(0,0,0, 0.5);
+  margin-bottom: 30px;
+}
+
+.details .promo .panel-default .thumbnail {
+    background-color: rgb(246,199,0);
+}
+
+.details .thumbnail h1 {
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pacifico', Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+body .details img{
+    width: 100px;
+    height: 100px;
+}
+
+body .details .panel-body p{
+    color:white;
+    text-shadow:1px 1px 2px black;
 }
