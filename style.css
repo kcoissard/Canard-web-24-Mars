@@ -59,6 +59,7 @@ header #logo_nom img{
 	justify-content: flex-end;	
     position:relative;
     top: 20px;
+    margin-bottom: 50px;
 }
 
 
@@ -244,8 +245,7 @@ label {
 }
 
 .thumbnail {
-    position: relative;
-    left: 15px;
+    margin: 15px 5px;
     background-color: rgb(128,154,189); 
     /*background-color: rgb(246,199,0); /* jaune poussin*/
 }
@@ -342,9 +342,15 @@ td {
 }
 
 .promo {
+    background-color: rgb(231,52,0);
+}
+
+.promo .thumbnail {
     background-color: rgb(244,195,0);
-    margin: auto;
+    width: 80%;
+    margin:auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .promo p {
@@ -357,14 +363,19 @@ td {
     text-shadow: none;
 }
 
+h2, del {
+    display: inline-block;
+}
+
+.promo .img-rounded {
+    width: 75%;
+    color: red;
+}
+
 del {
     font-size: 1.4em;
     color: red;
     opacity: 0.5;
-}
-
-.promo h2, del {
-    display: inline-block;
 }
 
 .suggestions .img-rounded {
@@ -376,3 +387,36 @@ del {
     margin-bottom: 20px;
 }
 
+.left-aside {
+    margin-left: 20px;
+    margin-right: -10px;
+}
+
+.accueil {
+    margin: 20px;
+}
+
+.accueil .thumbnail {
+  background-color: rgba(0,0,0, 0.5);
+  margin-bottom: 30px;
+}
+
+.accueil .promo .panel-default .thumbnail {
+    background-color: rgb(246,199,0);
+}
+
+.accueil .thumbnail h1 {
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pacifico', Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+.accueil article .thumbnail p {
+    text-align: center;
+    margin: 30px;
+    font-size: 1.5em;
+    color: red;
+}
