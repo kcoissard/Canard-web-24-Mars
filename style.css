@@ -16,10 +16,9 @@ html {
 
 body {
     height: 100%;
-    /* ----> j'ai fixe le fond, donc on n'a plus besoin de la hauteur, qui fait planter le fond quand on scroll d'ailleurs */
     color: white;
     margin: auto;
-    background: url("fond-index.jpg") no-repeat center fixed;
+    background: url("/images/fond-index.jpg") no-repeat center fixed;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -312,10 +311,6 @@ td {
     padding: 5px;
 }
 
-.col-md-6 {
-    border: red 2px solid;
-}
-
 .pagination {
     font-size: 1.5em;
     font-family: 'Pacifico', Arial, sans-serif;
@@ -328,11 +323,11 @@ td {
 }
 
 .promo {
-    background-color: rgb(231, 52, 0);
+    background-color: rgb(231, 52, 0); /* orange */
 }
 
 .promo .thumbnail {
-    background-color: rgb(244, 195, 0);
+    background-color: rgb(244, 195, 0); /*jaune poussin*/
     width: 80%;
     margin: auto;
     margin-top: 20px;
@@ -389,7 +384,7 @@ del {
 }
 
 .accueil .promo .panel-default .thumbnail {
-    background-color: rgb(246, 199, 0);
+    background-color: rgb(246, 199, 0); /* jaune poussin */
 }
 
 .accueil .thumbnail h1 {
@@ -423,7 +418,7 @@ del {
 }
 
 .details .promo .panel-default .thumbnail {
-    background-color: rgb(246, 199, 0);
+    background-color: rgb(246, 199, 0); /* jaune poussin */
 }
 
 .details .thumbnail h1 {
@@ -479,7 +474,7 @@ body .details .panel-body p {
 }
 
 .equipe .promo .panel-default .thumbnail {
-    background-color: rgb(246, 199, 0);
+    background-color: rgb(246, 199, 0); /* jaune poussin */
 }
 
 .equipe .thumbnail h1 {
@@ -491,9 +486,14 @@ body .details .panel-body p {
     letter-spacing: 0.1em;
 }
 
-body .equipe img {
-    width: 100px;
-    height: 100px;
+.equipe .thumbnail h2 {
+    margin: 25px;
+    font-family: 'Pacifico', Arial, sans-serif;
+}
+
+.equipe .thumbnail p {
+    text-align: center;
+    margin: 25px;
 }
 
 .equipe .panel-body {
@@ -501,4 +501,13 @@ body .equipe img {
     color: white;
     text-shadow: 1px 1px 2px black;
 }
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    letter-spacing: 0.1em;
+}
+
+
 /* find page equipe */
