@@ -249,14 +249,18 @@ input.form-control.esearch {
     width: 150px;
 }
 
-label {
+label{
     color: black;
+    position: relative;
+    left: 10px;
+    font-size: 1.2em;
 }
+
 
 .thumbnail {
     margin: 15px 5px;
-    background-color: rgb(128,154,189); 
-    /*background-color: rgb(246,199,0); /* jaune poussin*/
+    background-color: rgba(246,199,0, 0.9); /*jaune poussin un peu transparent*/
+    border: 3px white solid;
 }
 
 .thumbnail p {
@@ -302,8 +306,8 @@ option {
 
 .caption h2{
     margin-left: 25px;
-    color: yellow;
-    text-shadow: 2px 2px 4px #000000;
+    color: rgb(231,52,0); /* orangé */
+    font-weight: bold;
 }
 
 .img-rounded {
