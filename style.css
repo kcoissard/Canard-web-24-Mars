@@ -1,4 +1,5 @@
-/* Définition des polices personnalisées */
+/* Definition des polices personnalisees */
+
 @font-face {
     font-family: 'Pacifico';
     font-style: normal;
@@ -6,160 +7,141 @@
     src: local('Pacifico'), url('http://themes.googleusercontent.com/font?kit=fKnfV28XkldRW297cFLeqfesZW2xOQ-xsNqO47m55DA') format('truetype');
 }
 
-html{
-	font-family: 'Dayrom';
-	/*background-color:black;*/
-	height: 100%;
-	width: 100%;
-    min-height: 671px;
-    min-width: 682px;
+html {
+    font-family: 'Dayrom';
+    /*background-color:black;*/
+    height: 100%;
+    width: 100%;
 }
 
-
-body{
-	height: 100%; /* ----> j'ai fixé le fond, donc on n'a plus besoin de la hauteur, qui fait planter le fond quand on scroll d'ailleurs */
-	color:white;
-	margin:auto;
-	background: url("fond-index.jpg") no-repeat center fixed;
-    background-size: cover; 
+body {
+    height: 100%;
+    /* ----> j'ai fixe le fond, donc on n'a plus besoin de la hauteur, qui fait planter le fond quand on scroll d'ailleurs */
+    color: white;
+    margin: auto;
+    background: url("fond-index.jpg") no-repeat center fixed;
+    background-size: cover;
     background-attachment: fixed;
 }
 
-
-#top_accueil{
-	margin-left: 50px;
-    margin-bottom: 40px;
-	display: flex;
-	justify-content:space-between;
+#top_accueil {
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
-
-#logo_nom{
-	text-shadow:3px 3px 5px black;
-	font-size:large;
-	width: 350px;
-	font-family: 'Pacifico', Arial, sans-serif;
+#logo_nom {
+    text-shadow: 3px 3px 5px black;
+    font-size: large;
+    min-width: 320px;
+    font-family: 'Pacifico', Arial, sans-serif;
 }
 
-
-header #logo_nom img{
-    float:left;
+header #logo_nom img {
+    float: left;
     max-width: 20%;
     height: auto;
     margin-right: 30px;
 }
 
-
-#top_accueil .nav{
+#top_accueil .nav {
     margin-top: 8px;
-	width : 100%;
-	height: 20%;
-	float : right;
-	display : flex;
-	justify-content: flex-end;	
-    position:relative;
+    width: 100%;
+    height: 20%;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
     top: 20px;
     margin-bottom: 50px;
 }
 
-
-#top_accueil nav ul{
-    font-size:x-large;
-	text-align: left;
-	margin: 4px 50px 5px;
-	font-family: 'Pacifico', Arial, sans-serif;
-	display:flex;
-	flex-wrap: wrap;
+#top_accueil nav ul {
+    font-size: x-large;
+    text-align: left;
+    margin: 4px 50px 5px;
+    font-family: 'Pacifico', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
     padding-top: 20px;
 }
 
-
-#top_accueil nav li{
-	margin: 8px;
-	display:inline;
-	color:white;
-    text-shadow:1px 1px 2px black;
+#top_accueil nav li {
+    margin: 8px;
+    display: inline;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
-
-
-
 
 #top_accueil nav li a {
     padding: 10px;
-	color:inherit;
-	text-decoration: none;
+    color: inherit;
+    text-decoration: none;
     font-size: 0.9em;
 }
 
-
-#top_accueil nav li a #canards{
-	color:#ff8c2b;
-	text-shadow:1px 1px 2px black;
+#top_accueil nav li a #canards {
+    color: #ff8c2b;
+    text-shadow: 1px 1px 2px black;
     padding-right: 3px;
     padding-left: 3px;
 }
 
-#top_accueil nav li #ICI{
-    color:yellow;
+#top_accueil nav li #ICI {
+    color: yellow;
 }
 
 #top_accueil nav li a:hover {
     color: yellow;
-    text-shadow:3px 3px 3px black;
-    border:dashed 3px black; 
-} 
-
-
-#top_accueil nav li a span:hover{
-	color:yellow;
-	
-    text-shadow:3px 3px 3px black;
+    text-shadow: 3px 3px 3px black;
+    border: dashed 3px black;
 }
 
+#top_accueil nav li a span:hover {
+    color: yellow;
+    text-shadow: 3px 3px 3px black;
+}
 
-#logo_nom a h1{
+#logo_nom a h1 {
     font-size: 200%;
 }
 
-
-section{
-	width: 40%;
-	height:40%;
-	margin:auto;
-	margin-bottom: 10px;
-	margin-top: 50px;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	text-align:center;
+section {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
-
 
 footer {
     font-family: Verdana, sans-serif;
     margin-left: 20px;
-    font-size:small;
-    text-shadow:3px 3px 3px black;
-    position:absolute;
-    margin-bottom:10px;
+    font-size: small;
+    text-shadow: 3px 3px 3px black;
+    position: absolute;
+    margin-bottom: 10px;
 }
 
-
-#zone_recherche{
+#zone_recherche {
     margin-left: 50px;
-    width:30%;
-    display:flex;
+    width: 30%;
+    display: flex;
 }
 
 
 /* Lien source pour le boutton : http://www.sanwebe.com/2014/02/css3-buttons-examples-with-effects-animations */
+
 #button {
     display: inline-block;
     margin-top: 20%;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow:    0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+    -webkit-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
     -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
     box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
     -webkit-transition: -webkit-box-shadow .1s ease-in-out;
@@ -198,10 +180,11 @@ footer {
     text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
 }
 
-#button:active, #button:focus {
-    -webkit-box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+#button:active,
+#button:focus {
+    -webkit-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
-    box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+    box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
 }
 
 #button:active span {
@@ -211,7 +194,9 @@ footer {
     transform: translate(0, 4px);
 }
 
+
 /*Formulaire*/
+
 #research {
     margin: 0px;
     width: 150px;
@@ -222,12 +207,12 @@ footer {
 .research {
     width: 90%;
     height: 30%;
-    margin:auto;
+    margin: auto;
     margin-bottom: 10px;
     /*display:flex;
     flex-direction:column;
     justify-content:center;*/
-    text-align:center;
+    text-align: center;
 }
 
 .form-group {
@@ -236,9 +221,9 @@ footer {
 }
 
 h1 {
-    color:white;
+    color: white;
     position: relative;
-    top:10px;
+    top: 10px;
 }
 
 a:hover {
@@ -249,17 +234,17 @@ input.form-control.esearch {
     width: 150px;
 }
 
-label{
+label {
     color: black;
     position: relative;
     left: 10px;
     font-size: 1.2em;
 }
 
-
 .thumbnail {
     margin: 15px 5px;
-    background-color: rgba(246,199,0, 0.9); /*jaune poussin un peu transparent*/
+    background-color: rgba(246, 199, 0, 0.9);
+    /*jaune poussin un peu transparent*/
     border: 3px white solid;
 }
 
@@ -278,23 +263,20 @@ option {
 .thumbnail .btn-default {
     margin: 10px;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     font-size: 1.2em;
 }
-
-
 
 .panel-heading {
-    margin:-5px;
+    margin: -5px;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     font-size: 1.2em;
     text-transform: uppercase;
-
 }
 
-/*La feuille de style que tu avais intégré dans le header */
 
+/*La feuille de style que tu avais integre dans le header */
 
 
 /* -----------  NOS CANARDS -----------*/
@@ -304,9 +286,10 @@ option {
     font-weight: bold;
 }
 
-.caption h2{
+.caption h2 {
     margin-left: 25px;
-    color: rgb(231,52,0); /* orangé */
+    color: rgb(231, 52, 0);
+    /* orange */
     font-weight: bold;
 }
 
@@ -315,24 +298,21 @@ option {
     margin: 20px 20px -10px 20px;
 }
 
-
 .glyphicon-shopping-cart {
     margin: 10px;
 }
 
-.ajouter-panier{
+.ajouter-panier {
     text-align: right;
     pos
 }
 
-
 td {
-
     padding: 5px;
 }
 
-.col-md-6{
-     border: red 2px solid;
+.col-md-6 {
+    border: red 2px solid;
 }
 
 .pagination {
@@ -347,13 +327,13 @@ td {
 }
 
 .promo {
-    background-color: rgb(231,52,0);
+    background-color: rgb(231, 52, 0);
 }
 
 .promo .thumbnail {
-    background-color: rgb(244,195,0);
+    background-color: rgb(244, 195, 0);
     width: 80%;
-    margin:auto;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -368,7 +348,8 @@ td {
     text-shadow: none;
 }
 
-h2, del {
+h2,
+del {
     display: inline-block;
 }
 
@@ -402,12 +383,12 @@ del {
 }
 
 .accueil .thumbnail {
-  background-color: rgba(0,0,0, 0.5);
-  margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
 }
 
 .accueil .promo .panel-default .thumbnail {
-    background-color: rgb(246,199,0);
+    background-color: rgb(246, 199, 0);
 }
 
 .accueil .thumbnail h1 {
@@ -424,7 +405,11 @@ del {
     margin: 30px;
     font-size: 1.5em;
     color: red;
+    text-shadow: 1px 3px 3px black;
 }
+
+
+/* page details */
 
 .details {
     margin: 20px;
@@ -432,12 +417,12 @@ del {
 }
 
 .details .thumbnail {
-  background-color: rgba(0,0,0, 0.5);
-  margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
 }
 
 .details .promo .panel-default .thumbnail {
-    background-color: rgb(246,199,0);
+    background-color: rgb(246, 199, 0);
 }
 
 .details .thumbnail h1 {
@@ -448,12 +433,71 @@ del {
     font-size: 3em;
     letter-spacing: 0.1em;
 }
-body .details img{
+
+body .details img {
     width: 100px;
     height: 100px;
 }
 
-body .details .panel-body p{
-    color:white;
-    text-shadow:1px 1px 2px black;
+body .details .panel-body p {
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
+
+#detailstext{
+    text-align: left;
+}
+
+.details h3{
+    padding-top: 10px;
+    border-top:2px solid white;
+}
+/*  fin page details */
+
+
+/* page equipe */
+
+#photo {
+    display: flex;
+    justify-content: center;
+}
+
+#photo img {
+    width: 140px;
+    height: 200px;
+}
+
+.equipe {
+    margin: 20px;
+    text-align: center;
+}
+
+.equipe .thumbnail {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.equipe .promo .panel-default .thumbnail {
+    background-color: rgb(246, 199, 0);
+}
+
+.equipe .thumbnail h1 {
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pacifico', Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+body .equipe img {
+    width: 100px;
+    height: 100px;
+}
+
+.equipe .panel-body {
+    text-align: left;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+/* find page equipe */
