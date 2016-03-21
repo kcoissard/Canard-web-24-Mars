@@ -500,7 +500,10 @@ body .details .panel-body p {
 
 .equipe .thumbnail p {
     text-align: center;
-    margin: 25px;
+}
+
+.equipe .panel-heading {
+    margin-bottom: 20px;
 }
 
 .equipe .panel-body {
@@ -514,6 +517,44 @@ body .details .panel-body p {
     height: 200px;
     margin: auto;
     letter-spacing: 0.1em;
+}
+
+.panier .img-circle {
+    padding: 10px;
+    width: auto;
+    height: 150px;
+}
+
+.panier form input {
+    width: 70px;
+    position: relative;
+    bottom: 4px; 
+}
+
+/*test*/
+.panier table td {
+    border-bottom: solid 2px grey;
+}
+
+.panier table td, th {
+    text-align: center;
+    
+}
+
+.panier-libelle {
+   width: 50%;
+}
+
+.panier p, input {
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.panier-libelle p{
+    text-align: left;
+    margin-left: 10px;
 }
 
 
