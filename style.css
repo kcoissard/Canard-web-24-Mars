@@ -1,5 +1,7 @@
-/* Definition des polices personnalisees */
 
+/* DEBUT commun à toutes les pages */
+
+/* Definition des polices personnalisees */
 @font-face {
     font-family: 'Pacifico';
     font-style: normal;
@@ -17,101 +19,210 @@ body {
     height: 100%;
     color: white;
     margin: auto;
-    background: url("/images/fond-index.jpg") no-repeat center fixed;
+    background: url("images/fond-index.jpg") no-repeat center fixed;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.panel-default .panel-heading {
+
+    /*DEBUT top + nav */
+    #top_accueil {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #logo_nom {
+        text-shadow: 3px 3px 5px black;
+        font-size: large;
+        min-width: 300px;
+        width: auto;
+        font-family: 'Pacifico', Arial, sans-serif;
+    }
+
+    header #logo_nom img {
+        float: left;
+        max-width: 70px;
+        max-height: 70px;
+        height: auto;
+        margin-right: 30px;
+    }
+
+    #top_accueil .nav {
+        width: 100%;
+        height: 20%;
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 20px;
+        margin-bottom: 50px;
+    }
+
+    #top_accueil nav ul {
+        margin-right: 15px;
+        font-size: x-large;
+        text-align: left;
+        padding-left: 0px;
+        font-family: 'Pacifico', Arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    #top_accueil nav li {
+        margin: 8px;
+        display: inline;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    #top_accueil nav li a {
+        padding: 10px;
+        color: inherit;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+
+    #top_accueil nav li a #canards {
+        color: #FF0099;
+        text-shadow: 1px 1px 2px black;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    #top_accueil nav li #ICI {
+        color: yellow;
+    }
+
+    #top_accueil nav li a:hover {
+        color: yellow;
+        text-shadow: 3px 3px 3px black;
+        border: dashed 3px white;
+        transition: 0.7s;
+    }
+
+    #top_accueil nav li a span:hover {
+        color: yellow;
+        text-shadow: 3px 3px 3px black;
+    }
+
+    #logo_nom a h1 {
+        font-size: 200%;
+    }
+
+    #zone_recherche {
+        margin-left: 50px;
+        width: 30%;
+        display: flex;
+    }
+
+    /*FIN top + nav */
+
+
+.footer {
+    font-family: Verdana, sans-serif;
+    font-size: small;
+    text-shadow: 3px 3px 3px black;
+    margin: 20px;
+    bottom: 0px;
+}
+
+
+
+
+    /*Formulaire*/
+
+    #research {
+        margin: 0px;
+        width: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .research {
+        width: 90%;
+        height: 30%;
+        margin: auto;
+        margin-bottom: 10px;
+        /*display:flex;
+        flex-direction:column;
+        justify-content:center;*/
+        text-align: center;
+    }
+
+    .form-group {
+        position: relative;
+        bottom: 16px;
+    }
+
+    h1 {
+        color: white;
+        position: relative;
+        top: 10px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    input.form-control.esearch {
+        width: 150px;
+    }
+
+    label {
+        color: black;
+        position: relative;
+        left: 10px;
+        font-size: 1.2em;
+    }
+
+    .thumbnail {
+        background-color: rgb(255, 169, 196); /* rose */
+        border: 2px white solid;
+    }
+
+    .thumbnail p {
+        font-size: 1.3em;
+    }
+
+    .form-control {
+        margin: 10px;
+    }
+
+    option {
+        margin: 10px;
+    }
+
+    .thumbnail .btn-default {
+        margin: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .panel-heading {
+        margin: -5px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .panel-default .panel-heading {
     color: #696969;
     font-weight: bold;
 }
+    /* FIN formulaire */
+/* FIN commun à toutes les pages */
 
 
-#top_accueil {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
 
-#logo_nom {
-    text-shadow: 3px 3px 5px black;
-    font-size: large;
-    min-width: 300px;
-    width: auto;
-    font-family: 'Pacifico', Arial, sans-serif;
-}
 
-header #logo_nom img {
-    float: left;
-    max-width: 70px;
-    max-height: 70px;
-    height: auto;
-    margin-right: 30px;
-}
 
-#top_accueil .nav {
-    width: 100%;
-    height: 20%;
-    float: right;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 20px;
-    margin-bottom: 50px;
-}
 
-#top_accueil nav ul {
-    margin-right: 15px;
-    font-size: x-large;
-    text-align: left;
-    padding-left: 0px;
-    font-family: 'Pacifico', Arial, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;
-}
 
-#top_accueil nav li {
-    margin: 8px;
-    display: inline;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-}
 
-#top_accueil nav li a {
-    padding: 10px;
-    color: inherit;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-#top_accueil nav li a #canards {
-    color: #FF0099;
-    text-shadow: 1px 1px 2px black;
-    padding-right: 3px;
-    padding-left: 3px;
-}
-
-#top_accueil nav li #ICI {
-    color: yellow;
-}
-
-#top_accueil nav li a:hover {
-    color: yellow;
-    text-shadow: 3px 3px 3px black;
-    border: dashed 3px white;
-    transition: 0.7s;
-}
-
-#top_accueil nav li a span:hover {
-    color: yellow;
-    text-shadow: 3px 3px 3px black;
-}
-
-#logo_nom a h1 {
-    font-size: 200%;
-}
-
+/* DEBUT index */
 section {
     width: 40%;
     height: 40%;
@@ -124,165 +235,77 @@ section {
     text-align: center;
 }
 
-.footer {
-    font-family: Verdana, sans-serif;
-    font-size: small;
-    text-shadow: 3px 3px 3px black;
-    margin: 20px;
-    bottom: 0px;
-}
-
-#zone_recherche {
-    margin-left: 50px;
-    width: 30%;
-    display: flex;
-}
 
 
-/* Lien source pour le boutton : http://www.sanwebe.com/2014/02/css3-buttons-examples-with-effects-animations */
 
-#button {
-    display: inline-block;
-    margin-top: 20%;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-    -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-    box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
-    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
-    -moz-transition: -moz-box-shadow .1s ease-in-out;
-    -o-transition: -o-box-shadow .1s ease-in-out;
-    transition: box-shadow .1s ease-in-out;
-    font-size: 50px;
-    color: #fff;
-}
+    /* DEBUT bouton index */
+    /* Lien source pour le boutton : http://www.sanwebe.com/2014/02/css3-buttons-examples-with-effects-animations */
+    #button {
+        display: inline-block;
+        margin-top: 20%;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+        -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+        box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+        -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+        -moz-transition: -moz-box-shadow .1s ease-in-out;
+        -o-transition: -o-box-shadow .1s ease-in-out;
+        transition: box-shadow .1s ease-in-out;
+        font-size: 50px;
+        color: #fff;
+    }
 
-#button span {
-    display: inline-block;
-    padding: 20px 30px;
-    background-color: #ec528d;
-    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
-    background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
-    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
-    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
-    font-family: 'Pacifico', Arial, sans-serif;
-    line-height: 1;
-    text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
-    -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
-    -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
-    -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
-    transition: background-color .2s ease-in-out, transform .1s ease-in-out;
-}
+    #button span {
+        display: inline-block;
+        padding: 20px 30px;
+        background-color: #ec528d;
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+        background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+        background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+        background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        font-family: 'Pacifico', Arial, sans-serif;
+        line-height: 1;
+        text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
+        -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+        -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+        -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+        transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+    }
 
-#button:hover span {
-    background-color: #ec6a9c;
-    text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
-}
+    #button:hover span {
+        background-color: #ec6a9c;
+        text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+    }
 
-#button:active,
-#button:focus {
-    -webkit-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
-    box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
-}
+    #button:active,
+    #button:focus {
+        -webkit-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+        box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+    }
 
-#button:active span {
-    -webkit-transform: translate(0, 4px);
-    -moz-transform: translate(0, 4px);
-    -o-transform: translate(0, 4px);
-    transform: translate(0, 4px);
-}
-
-
-/*Formulaire*/
-
-#research {
-    margin: 0px;
-    width: 150px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.research {
-    width: 90%;
-    height: 30%;
-    margin: auto;
-    margin-bottom: 10px;
-    /*display:flex;
-    flex-direction:column;
-    justify-content:center;*/
-    text-align: center;
-}
-
-.form-group {
-    position: relative;
-    bottom: 16px;
-}
-
-h1 {
-    color: white;
-    position: relative;
-    top: 10px;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-input.form-control.esearch {
-    width: 150px;
-}
-
-label {
-    color: black;
-    position: relative;
-    left: 10px;
-    font-size: 1.2em;
-}
-
-.thumbnail {
-    background-color: rgb(255, 169, 196); /* rose */
-    border: 2px white solid;
-}
-
-.thumbnail p {
-    font-size: 1.3em;
-}
-
-.form-control {
-    margin: 10px;
-}
-
-option {
-    margin: 10px;
-}
-
-.thumbnail .btn-default {
-    margin: 10px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.panel-heading {
-    margin: -5px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
-/*La feuille de style que tu avais integre dans le header */
+    #button:active span {
+        -webkit-transform: translate(0, 4px);
+        -moz-transform: translate(0, 4px);
+        -o-transform: translate(0, 4px);
+        transform: translate(0, 4px);
+    }
+    /* FIN bouton index */
+/* FIN index */
 
 
-/* -----------  NOS CANARDS -----------*/
+
+
+
+/* DEBUT Nos Canards */
 
 .caption {
     text-align: center;
@@ -333,8 +356,8 @@ td {
 }
 
 .promo {
-   background-color: #FF0066; /*jaune poussin v2 */
-    /* orange */
+   background-color: #FF0066;
+    /* couleur fond promo */
 }
 
 .promo .thumbnail {
@@ -415,8 +438,11 @@ del {
     color: orange;
     text-shadow: 1px 3px 3px black;
 }
+/* FIN nos canards */
 
-/* Article */
+
+
+/* DEBUT Article */
 
 .article h2 {
     color: red;
@@ -426,8 +452,13 @@ del {
 .article p {
     color: rgb(51,51,73);
 }
+/* FIN Article */
 
-/* page details */
+
+
+
+
+/* DEBUT details */
 
 .details {
     margin: 20px;
@@ -464,7 +495,7 @@ body .details .panel-body p {
 }
 
 .detailstext ul {
-    margin-left: 45%;
+    margin-left: 40%;
     margin-right: 40%;
     text-align: left;
 }
@@ -474,11 +505,26 @@ body .details .panel-body p {
     border-top: 2px solid white;
 }
 
+.liens-externes{
+    color:white;
+    text-decoration: inherit;
+    font-size: 1.2em;
+}
 
-/*  fin page details */
+.liens-externes:hover{
+    color:orangered;
+}
+
+.liens-externes:visited{
+    color:darkviolet;
+}
+
+/*  FIN page details */
 
 
-/* page equipe */
+
+
+/* DEBUT page equipe */
 
 #photo {
     display: flex;
@@ -540,9 +586,12 @@ body .details .panel-body p {
     letter-spacing: 0.1em;
 }
 
-/* fin page equipe */
+/*  FIN page equipe */
 
-/* PANIER */
+
+
+
+/* DEBUT panier */
 .panier {
     width: 75%;
     margin: auto;
@@ -586,3 +635,4 @@ body .details .panel-body p {
     text-align: left;
     margin-left: 10px;
 }
+/*  FIN panier */
