@@ -557,5 +557,7 @@ body .details .panel-body p {
     margin-left: 10px;
 }
 
-
+.content {
+    padding: 10px;
+}
 /* fin page equipe */
