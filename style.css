@@ -9,7 +9,6 @@
 
 html {
     font-family: 'Dayrom';
-    /*background-color:black;*/
     height: 100%;
     width: 100%;
 }
@@ -22,6 +21,12 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+.panel-default .panel-heading {
+    color: #696969;
+    font-weight: bold;
+}
+
 
 #top_accueil {
     margin-left: 20px;
@@ -81,7 +86,7 @@ header #logo_nom img {
 }
 
 #top_accueil nav li a #canards {
-    color: #ff8c2b;
+    color: #FF0099;
     text-shadow: 1px 1px 2px black;
     padding-right: 3px;
     padding-left: 3px;
@@ -95,6 +100,7 @@ header #logo_nom img {
     color: yellow;
     text-shadow: 3px 3px 3px black;
     border: dashed 3px white;
+    transition: 0.7s;
 }
 
 #top_accueil nav li a span:hover {
@@ -242,8 +248,8 @@ label {
 }
 
 .thumbnail {
-    /*background-color: rgba(255, 255, 255, 1);*/
-    border: 3px white solid;
+    background-color: rgb(255, 169, 196); /* rose */
+    border: 2px white solid;
 }
 
 .thumbnail p {
@@ -285,8 +291,8 @@ option {
 
 .caption h2 {
     margin-left: 25px;
-    color: rgb(231, 52, 0);
-    /* orange */
+    color: #FF0099;
+    text-shadow: 1px 1px 3px black;
     font-weight: bold;
 }
 
@@ -308,9 +314,17 @@ td {
 }
 
 .pagination {
+    display: inline-block;
     font-size: 1.5em;
     font-family: 'Pacifico', Arial, sans-serif;
     margin: 15px;
+    text-align: center;
+}
+
+.pager {
+    margin: auto;
+    color: red;
+    text-align:center;
 }
 
 .btn-panier {
@@ -319,17 +333,18 @@ td {
 }
 
 .promo {
-    background-color: rgb(231, 52, 0);
+   background-color: #FF0066; /*jaune poussin v2 */
     /* orange */
 }
 
 .promo .thumbnail {
-    background-color: rgb(244, 195, 0);
-    /*jaune poussin*/
+    background-color: #FF0066;
     width: 80%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 1px white solid;
+    box-shadow: 1px 1px 20px;
 }
 
 .promo p {
@@ -337,7 +352,7 @@ td {
 }
 
 .promo h2 {
-    color: yellow;
+    color: white;
     font-weight: bold;
     text-shadow: none;
 }
@@ -381,8 +396,7 @@ del {
 }
 
 .accueil .promo .panel-default .thumbnail {
-    background-color: rgb(246, 199, 0);
-    /* jaune poussin */
+    background-color: rgb(255, 190, 20);/* jaune poussin */
 }
 
 .accueil .thumbnail h1 {
@@ -402,6 +416,16 @@ del {
     text-shadow: 1px 3px 3px black;
 }
 
+/* Article */
+
+.article h2 {
+    color: red;
+    font-weight: bold;
+}
+
+.article p {
+    color: rgb(51,51,73);
+}
 
 /* page details */
 
@@ -416,7 +440,7 @@ del {
 }
 
 .details .promo .panel-default .thumbnail {
-    background-color: rgb(246, 199, 0);
+    background-color: rgb(255, 190, 20);
     /* jaune poussin */
 }
 
@@ -477,7 +501,7 @@ body .details .panel-body p {
 }
 
 .equipe .promo .panel-default .thumbnail {
-    background-color: rgb(246, 199, 0);
+    background-color: rgb(255, 190, 20);
     /* jaune poussin */
 }
 
@@ -516,12 +540,12 @@ body .details .panel-body p {
     letter-spacing: 0.1em;
 }
 
+/* fin page equipe */
 
-/********** PANIER *******/
+/* PANIER */
 .panier {
     width: 75%;
     margin: auto;
-    background-color: white;
 }
 
 .panier .img-circle {
@@ -543,8 +567,8 @@ body .details .panel-body p {
 }
 
 .ligne-tableau{
-     border-bottom: grey solid 2px;
-    border-top: grey solid 2px;
+     border-bottom: white solid 2px;
+    border-top: white solid 2px;
 }
 
 .panier-libelle {
@@ -562,4 +586,3 @@ body .details .panel-body p {
     text-align: left;
     margin-left: 10px;
 }
-/* fin page equipe */
