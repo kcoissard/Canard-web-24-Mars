@@ -242,9 +242,7 @@ label {
 }
 
 .thumbnail {
-    margin: 15px 5px;
-    background-color: rgba(246, 199, 0, 0.9);
-    /*jaune poussin un peu transparent*/
+    /*background-color: rgba(255, 255, 255, 1);*/
     border: 3px white solid;
 }
 
@@ -274,7 +272,6 @@ option {
     font-size: 1.2em;
     text-transform: uppercase;
 }
-
 
 /*La feuille de style que tu avais integre dans le header */
 
@@ -519,6 +516,14 @@ body .details .panel-body p {
     letter-spacing: 0.1em;
 }
 
+
+/********** PANIER *******/
+.panier {
+    width: 75%;
+    margin: auto;
+    background-color: white;
+}
+
 .panier .img-circle {
     padding: 10px;
     width: auto;
@@ -531,14 +536,15 @@ body .details .panel-body p {
     bottom: 4px; 
 }
 
-/*test*/
-.panier table td {
-    border-bottom: solid 2px grey;
-}
+
 
 .panier table td, th {
-    text-align: center;
-    
+    text-align: center;    
+}
+
+.ligne-tableau{
+     border-bottom: grey solid 2px;
+    border-top: grey solid 2px;
 }
 
 .panier-libelle {
@@ -556,6 +562,4 @@ body .details .panel-body p {
     text-align: left;
     margin-left: 10px;
 }
-
-
 /* fin page equipe */
