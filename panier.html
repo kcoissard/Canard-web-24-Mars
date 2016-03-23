@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <Title> Le Bon CoinCoin - Mon Panier </title>
+
+</head>
+
+<body>
+
+    <div id="top_accueil">
+        <div class="content">
+            <div class="row">
+                <div class="col-md-3">
+                    <header class="header">
+                        <div id="logo_nom">
+                            <a href="accueil.html"><img src="images/logo.png" alt="logo" />
+                                <h1>Le Bon CoinCoin</h1></a>
+                        </div>
+                    </header>
+                </div>
+                <!-- fin col-md-3 -->
+                <nav class="col-md-9">
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a href="accueil.html">Accueil</a>
+                            </li>
+                            <li>
+                                <a href="ducklist.html"><span id="canards">Nos canards</span></a>
+                            </li>
+                            <li>
+                                <a href="qui-somme-nous.html">L'équipe</a>
+                            </li>
+                            <li>
+                                <a href="details.html">Détails techniques</a>
+                            </li>
+                            <li>
+                                <a href="panier.html"><span id="ICI">Mon Panier</span></a>
+                            </li>
+                            <li>
+                                <form class="navbar-form" action="ducklist.html" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control esearch" placeholder="Chercher un canard">
+                                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                    </div>
+                                    <!-- fin form-group -->
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- fin nav -->
+                </nav>
+                <!-- fin col-md-9 -->
+            </div>
+            <!-- fin row -->
+        </div>
+        <!-- fin content -->
+    </div>
+    <!-- fin top-accueil -->
+
+    <div class="content">
+        <div class="thumbnail panier ">
+            <div class="panel-default">
+                <div class="panel-heading"> Votre Panier </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>
+                                    <p>Prix</p>
+                                </th>
+                                <th>
+                                    <p>Quantité</p>
+                                </th>
+                                <th></th>
+                            </tr>
+
+                            <tr class="ligne-tableau">
+                                <td> <img class="img-circle" src="images/queen.jpg" alt="Coin Queen" /></td>
+                                <td class="panier-libelle">
+                                    <p> La Reine des Eaux </p>
+                                </td>
+                                <td>
+                                    <p> 5,00 </p>
+                                </td>
+                                <td>
+                                    <form>
+                                        <input type="number" name="quantity" min="1" placeholder="2">
+                                    </form>
+                                </td>
+                                <td>
+                                    <input type="submit" class="btn btn-default btn-submit" value="Supprimer" />
+                                </td>
+                            </tr>
+
+                            <tr class="ligne-tableau">
+                                <td> <img class="img-circle" src="images/malade.jpg" alt="Coin coin malade" /></td>
+                                <td class="panier-libelle">
+                                    <p> L'Hypocoindriaque </p>
+                                </td>
+                                <td>
+                                    <p> 4,59 </p>
+                                </td>
+                                <td>
+                                    <form>
+                                        <input type="number" name="quantity" min="1" placeholder="2">
+                                    </form>
+                                </td>
+                                <td>
+                                    <input type="submit" class="btn btn-default btn-submit" value="Supprimer" />
+                                </td>
+                            </tr>
+
+                            <tr class="ligne-tableau">
+                                <td> <img class="img-circle" src="images/roi.jpg" alt="Coin Roi" /></td>
+                                <td class="panier-libelle">
+                                    <p> The Koing </p>
+                                </td>
+                                <td>
+                                    <p> 25,50 </p>
+                                </td>
+                                <td>
+                                    <form>
+                                        <input type="number" name="quantity" min="1" placeholder="2">
+                                    </form>
+                                </td>
+                                <td>
+                                    <input type="submit" class="btn btn-default btn-submit" value="Supprimer" />
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <p style="text-align: right"> Total TTC EUR</p>
+                                </td>
+                                <td>
+                                    <p> 35,09 </p>
+                                </td>
+
+
+                                <!--
+                                                on est pas sensé mettre un input dans un a mais plutot dans un form :
+                                                <form action="ducklist.html"><input type="submit" class="btn btn-default btn-submit" value="Ajouter des articles" /></form>
+                                                -->
+
+                                <td>
+                                    <a href="ducklist.html" class="btn btn-default btn-submit">Ajouter des articles</a>
+                                </td>
+
+                                <td>
+                                    <input type="submit" class="btn btn-default btn-submit" value="Payer" />
+                                </td>
+
+                            </tr>
+                        </table>
+
+                    </div>
+                    <!-- fin row -->
+                </div>
+                <!-- fin panel-body -->
+            </div>
+            <!-- din panel-default -->
+        </div>
+        <!-- din thumbnail -->
+    </div>
+    <!-- fin content-->
+
+
+
+    <footer class="footer">
+        <p>Marion CRAIPEAU &amp; Kévin COISSARD ©AucunsDroitsReservés</p>
+    </footer>
+</body>
+
+
+
+</html>

@@ -1,0 +1,657 @@
+
+/* DEBUT commun à toutes les pages */
+
+/* Definition des polices personnalisees */
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pacifico'), url('http://themes.googleusercontent.com/font?kit=fKnfV28XkldRW297cFLeqfesZW2xOQ-xsNqO47m55DA') format('truetype');
+}
+
+html {
+    font-family: 'Dayrom';
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    color: white;
+    margin: auto;
+    background: url("images/fond-index.jpg") no-repeat center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+    /*DEBUT top + nav */
+    #top_accueil {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #logo_nom {
+        text-shadow: 3px 3px 5px black;
+        font-size: large;
+        min-width: 300px;
+        width: auto;
+        font-family: 'Pacifico', Arial, sans-serif;
+    }
+
+    header #logo_nom img {
+        float: left;
+        max-width: 70px;
+        max-height: 70px;
+        height: auto;
+        margin-right: 30px;
+    }
+
+    #top_accueil .nav {
+        width: 100%;
+        height: 20%;
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: 20px;
+        margin-bottom: 50px;
+    }
+
+    #top_accueil nav ul {
+        margin-right: 15px;
+        font-size: x-large;
+        text-align: left;
+        padding-left: 0px;
+        font-family: 'Pacifico', Arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    #top_accueil nav li {
+        margin: 8px;
+        display: inline;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    #top_accueil nav li a {
+        padding: 10px;
+        color: inherit;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+
+    #top_accueil nav li a #canards {
+        color: darkorange; /* icicouleur pour changer la couleur "Nos canards" du nav */
+        text-shadow: 1px 1px 2px black;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    #top_accueil nav li #ICI {
+        color: yellow;
+    }
+
+    #top_accueil nav li a:hover {
+        color: yellow;
+        text-shadow: 3px 3px 3px black;
+        border: dashed 3px white;
+        transition: 0.7s;
+    }
+
+    #top_accueil nav li a span:hover {
+        color: yellow;
+        text-shadow: 3px 3px 3px black;
+    }
+
+    #logo_nom a h1 {
+        font-size: 200%;
+    }
+
+    #zone_recherche {
+        margin-left: 50px;
+        width: 30%;
+        display: flex;
+    }
+
+    /*FIN top + nav */
+
+
+.footer {
+    font-family: Verdana, sans-serif;
+    font-size: small;
+    text-shadow: 3px 3px 3px black;
+    margin: 20px;
+    bottom: 0px;
+}
+
+
+
+
+    /*Formulaire*/
+
+    #research {
+        margin: 0px;
+        width: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .research {
+        width: 90%;
+        height: 30%;
+        margin: auto;
+        margin-bottom: 10px;
+        /*display:flex;
+        flex-direction:column;
+        justify-content:center;*/
+        text-align: center;
+    }
+
+    .form-group {
+        position: relative;
+        bottom: 16px;
+    }
+
+    h1 {
+        color: white;
+        position: relative;
+        top: 10px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    input.form-control.esearch {
+        width: 150px;
+    }
+
+    label {
+        color: black;
+        position: relative;
+        left: 10px;
+        font-size: 1.2em;
+    }
+
+    .thumbnail {
+        background-color:rgb(255, 190, 20) ; /* icicouleur pour changer la couleur de fond categorie et les canards */
+        border: 2px white solid;
+    }
+
+    .thumbnail p {
+        font-size: 1.3em;
+    }
+
+    .form-control {
+        margin: 10px;
+    }
+
+    option {
+        margin: 10px;
+    }
+
+    .thumbnail .btn-default {
+        margin: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .panel-heading {
+        margin: -5px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+
+    .panel-default .panel-heading {
+    color: #696969; /* icicouleur pour changer la couleur du titre des panels */
+    font-weight: bold;
+}
+    /* FIN formulaire */
+/* FIN commun à toutes les pages */
+
+
+
+
+
+
+
+
+/* DEBUT index */
+section {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+    /* DEBUT bouton index */
+    /* Lien source pour le boutton : http://www.sanwebe.com/2014/02/css3-buttons-examples-with-effects-animations */
+    #button {
+        display: inline-block;
+        margin-top: 20%;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+        -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+        box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+        -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+        -moz-transition: -moz-box-shadow .1s ease-in-out;
+        -o-transition: -o-box-shadow .1s ease-in-out;
+        transition: box-shadow .1s ease-in-out;
+        font-size: 50px;
+        color: #fff;
+    }
+
+    #button span {
+        display: inline-block;
+        padding: 20px 30px;
+        background-color: #ec528d;
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+        background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+        background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+        background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        font-family: 'Pacifico', Arial, sans-serif;
+        line-height: 1;
+        text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
+        -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+        -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+        -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+        transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+    }
+
+    #button:hover span {
+        background-color: #ec6a9c;
+        text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+    }
+
+    #button:active,
+    #button:focus {
+        -webkit-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+        box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+    }
+
+    #button:active span {
+        -webkit-transform: translate(0, 4px);
+        -moz-transform: translate(0, 4px);
+        -o-transform: translate(0, 4px);
+        transform: translate(0, 4px);
+    }
+    /* FIN bouton index */
+/* FIN index */
+
+
+
+
+
+/* DEBUT Nos Canards */
+
+.caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.caption h2 {
+    margin-left: 25px;
+    color: darkblue; /* icicouleur pour changer la couleur des prix */
+    text-shadow: 1px 1px 3px black;
+    font-weight: bold;
+}
+
+.caption a{
+    text-shadow:0px 0px 0px;
+    color:#696969;
+} /* icicouleur pour changer la couleur des "consulter" */
+
+.img-rounded {
+    border: white solid 2px;
+    margin: 20px 20px -10px 20px;
+}
+
+.glyphicon-shopping-cart {
+    margin: 10px;
+}
+
+.ajouter-panier {
+    text-align: right;
+}
+
+td {
+    padding: 5px;
+}
+
+.pagination {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: 'Pacifico', Arial, sans-serif;
+    margin: 15px;
+    text-align: center;
+}
+
+.pager {
+    margin: auto;
+    color: red;
+    text-align:center;
+}
+
+.btn-panier {
+    position: relative;
+    right: 10px;
+}
+
+.promo {
+   background-color: #a40000;
+    
+    /* icicouleur pour changer la couleur de fond coincoin promo */
+}
+
+.promo .thumbnail {
+    background-color: #a40000;
+    /* icicouleur pour changer la couleur de fond des canards dans coincoin promo */
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px white solid;
+    box-shadow: 1px 1px 20px;
+}
+
+.thumbnail .caption{
+    color:white;
+    text-shadow: 2px 1px 1px black;
+}
+/* icicouleur pour changer la couleur des textes dans les panels */
+
+.promo p {
+    font-size: 1em;
+}
+
+.promo h2 {
+    color: white; /* icicouleur pour changer la couleur des prix promo */
+    font-weight: bold;
+    text-shadow: none;
+}
+
+h2,
+del {
+    display: inline-block;
+}
+
+.promo .img-rounded {
+    width: 75%;
+    color: red;
+}
+
+del {
+    font-size: 1.4em;
+    color: black;
+}
+
+.suggestions .img-rounded {
+    width: 75%;
+    color: red;
+}
+
+.suggestions .panel-heading {
+    margin-bottom: 20px;
+}
+
+.left-aside {
+    margin-left: 20px;
+    margin-right: -10px;
+}
+
+.accueil {
+    margin: 20px;
+}
+
+.accueil .thumbnail {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.accueil .promo .panel-default .thumbnail {
+    background-color: rgb(255, 190, 20); /* icicouleur pour changer la couleur des panels accueil */
+}
+
+.accueil .thumbnail h1 {
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pacifico', Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+.accueil article .thumbnail p {
+    text-align: center;
+    margin: 30px;
+    font-size: 1.5em;
+    color: orange; /* icicouleur pour changer la couleur du texte jeu concours */
+    text-shadow: 1px 3px 3px black;
+}
+/* FIN nos canards */
+
+
+
+/* DEBUT Article */
+.decaleur {
+    margin-left: 20px;
+}
+
+.article h2 {
+    color: darkblue; /* icicouleur pour changer la couleur du prix de l'article */
+    text-shadow: 1px 3px 3px black;
+    font-weight: bold;
+}
+
+.article p {
+    color: rgb(51,51,73);
+}
+
+/* FIN Article */
+
+
+
+
+
+/* DEBUT details */
+
+.details {
+    margin: 20px;
+    text-align: center;
+}
+
+.details .thumbnail {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+
+.details .thumbnail h1 {
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pacifico', Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+body .details img {
+    width: 100px;
+    height: 100px;
+}
+
+body .details .panel-body p {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.detailstext ul {
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: left;
+}
+
+.details h3 {
+    padding-top: 10px;
+    border-top: 2px solid white;
+}
+
+.liens-externes{
+    color:white;
+    text-decoration: inherit;
+    font-size: 1.2em;
+}
+
+.liens-externes:hover{
+    color:orangered;
+}
+
+.liens-externes:visited{
+    color:darkviolet;
+}
+
+/*  FIN page details */
+
+
+
+
+/* DEBUT page equipe */
+
+#photo {
+    display: flex;
+    justify-content: center;
+}
+
+#photo img {
+    width: 140px;
+    height: 200px;
+}
+
+.equipe {
+    margin: 20px;
+    text-align: center;
+}
+
+.equipe .thumbnail {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.equipe .promo .panel-default .thumbnail {
+    background-color: rgb(255, 190, 20);
+    /* jaune poussin */
+}
+
+.equipe .thumbnail h1 {
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Pacifico', Arial, sans-serif;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+.equipe .thumbnail h2 {
+    margin: 25px;
+    font-family: 'Pacifico', Arial, sans-serif;
+}
+
+.equipe .thumbnail p {
+    text-align: center;
+}
+
+.equipe .panel-heading {
+    margin-bottom: 20px;
+}
+
+.equipe .panel-body {
+    text-align: left;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    letter-spacing: 0.1em;
+}
+
+/*  FIN page equipe */
+
+
+
+
+/* DEBUT panier */
+.panier {
+    min-width: 820px;
+    width: 75%;
+    margin: auto;
+}
+
+.panier .img-circle {
+    padding: 10px;
+    width: auto;
+    height: 150px;
+}
+
+.panier form input {
+    width: 70px;
+    position: relative;
+    bottom: 4px; 
+}
+
+table {
+    
+    margin:auto
+}
+
+.panier table td, th {
+    text-align: center;    
+}
+
+.ligne-tableau{
+     border-bottom: white solid 2px;
+    border-top: white solid 2px;
+}
+
+.panier-libelle {
+   width: 50%;
+}
+
+.panier p, input {
+    font-size: 1.3em;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.panier-libelle p{
+    text-align: left;
+    margin-left: 10px;
+}
+
+/*  FIN panier */
