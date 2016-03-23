@@ -369,7 +369,7 @@ td {
 .promo .thumbnail {
     background-color: #a40000;
     /* icicouleur pour changer la couleur de fond des canards dans coincoin promo */
-    width: 80%;
+    width: 95%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -456,15 +456,20 @@ del {
 
 
 /* DEBUT Article */
+.decaleur {
+    margin-left: 20px;
+}
 
 .article h2 {
-    color: blue; /* icicouleur pour changer la couleur du prix de l'article */
+    color: darkblue; /* icicouleur pour changer la couleur du prix de l'article */
+    text-shadow: 1px 3px 3px black;
     font-weight: bold;
 }
 
 .article p {
     color: rgb(51,51,73);
 }
+
 /* FIN Article */
 
 
@@ -602,6 +607,7 @@ body .details .panel-body p {
 
 /* DEBUT panier */
 .panier {
+    min-width: 820px;
     width: 75%;
     margin: auto;
 }
@@ -618,7 +624,10 @@ body .details .panel-body p {
     bottom: 4px; 
 }
 
-
+table {
+    
+    margin:auto
+}
 
 .panier table td, th {
     text-align: center;    
