@@ -84,7 +84,7 @@ body {
     }
 
     #top_accueil nav li a #canards {
-        color: #FF0099;
+        color: darkorange; /* icicouleur pour changer la couleur "Nos canards" du nav */
         text-shadow: 1px 1px 2px black;
         padding-right: 3px;
         padding-left: 3px;
@@ -177,7 +177,7 @@ body {
     }
 
     .thumbnail {
-        background-color: rgb(255, 169, 196); /* rose */
+        background-color:rgb(255, 190, 20) ; /* icicouleur pour changer la couleur de fond categorie et les canards */
         border: 2px white solid;
     }
 
@@ -209,7 +209,7 @@ body {
     }
 
     .panel-default .panel-heading {
-    color: #696969;
+    color: #696969; /* icicouleur pour changer la couleur du titre des panels */
     font-weight: bold;
 }
     /* FIN formulaire */
@@ -314,10 +314,15 @@ section {
 
 .caption h2 {
     margin-left: 25px;
-    color: #FF0099;
+    color: darkblue; /* icicouleur pour changer la couleur des prix */
     text-shadow: 1px 1px 3px black;
     font-weight: bold;
 }
+
+.caption a{
+    text-shadow:0px 0px 0px;
+    color:#696969;
+} /* icicouleur pour changer la couleur des "consulter" */
 
 .img-rounded {
     border: white solid 2px;
@@ -356,13 +361,15 @@ td {
 }
 
 .promo {
-   background-color: #FF0066;
-    /* couleur fond promo */
+   background-color: #a40000;
+    
+    /* icicouleur pour changer la couleur de fond coincoin promo */
 }
 
 .promo .thumbnail {
-    background-color: #FF0066;
-    width: 80%;
+    background-color: #a40000;
+    /* icicouleur pour changer la couleur de fond des canards dans coincoin promo */
+    width: 95%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -370,12 +377,18 @@ td {
     box-shadow: 1px 1px 20px;
 }
 
+.thumbnail .caption{
+    color:white;
+    text-shadow: 2px 1px 1px black;
+}
+/* icicouleur pour changer la couleur des textes dans les panels */
+
 .promo p {
     font-size: 1em;
 }
 
 .promo h2 {
-    color: white;
+    color: white; /* icicouleur pour changer la couleur des prix promo */
     font-weight: bold;
     text-shadow: none;
 }
@@ -419,7 +432,7 @@ del {
 }
 
 .accueil .promo .panel-default .thumbnail {
-    background-color: rgb(255, 190, 20);/* jaune poussin */
+    background-color: rgb(255, 190, 20); /* icicouleur pour changer la couleur des panels accueil */
 }
 
 .accueil .thumbnail h1 {
@@ -435,7 +448,7 @@ del {
     text-align: center;
     margin: 30px;
     font-size: 1.5em;
-    color: orange;
+    color: orange; /* icicouleur pour changer la couleur du texte jeu concours */
     text-shadow: 1px 3px 3px black;
 }
 /* FIN nos canards */
@@ -443,15 +456,20 @@ del {
 
 
 /* DEBUT Article */
+.decaleur {
+    margin-left: 20px;
+}
 
 .article h2 {
-    color: red;
+    color: darkblue; /* icicouleur pour changer la couleur du prix de l'article */
+    text-shadow: 1px 3px 3px black;
     font-weight: bold;
 }
 
 .article p {
     color: rgb(51,51,73);
 }
+
 /* FIN Article */
 
 
@@ -470,10 +488,6 @@ del {
     margin-bottom: 30px;
 }
 
-.details .promo .panel-default .thumbnail {
-    background-color: rgb(255, 190, 20);
-    /* jaune poussin */
-}
 
 .details .thumbnail h1 {
     margin-top: -10px;
@@ -593,6 +607,7 @@ body .details .panel-body p {
 
 /* DEBUT panier */
 .panier {
+    min-width: 820px;
     width: 75%;
     margin: auto;
 }
@@ -609,7 +624,10 @@ body .details .panel-body p {
     bottom: 4px; 
 }
 
-
+table {
+    
+    margin:auto
+}
 
 .panier table td, th {
     text-align: center;    
@@ -635,4 +653,5 @@ body .details .panel-body p {
     text-align: left;
     margin-left: 10px;
 }
+
 /*  FIN panier */
